@@ -187,7 +187,8 @@ while video_capture.isOpened():
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
                 # Flag that we have seen at least one open space
                 free_space[i] = True
-                park_out[i] = int(now.time())
+                if park_out[i] == 0:    # Not updated value
+                    park_out[i] = int(now.time())
                 i += 1
                 # free_space = True
             else:
