@@ -43,7 +43,6 @@ def get_car_boxes(boxes, class_ids):
 # Variable for timestamp
 now = time
 
-
 # Root directory of the project
 ROOT_DIR = Path(".")
 
